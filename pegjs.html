@@ -1,0 +1,46 @@
+<script type="text/x-red" data-template-name="pegjs">
+    <div class="form-row">
+        <label for="node-input-grammar"><i class="fa fa-filter"></i> <span data-i18n="pegjs.label.grammar"></span></label>
+        <textarea id="node-input-grammar" placeholder="grammar">
+    </div>
+    <br/>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span></label>
+        <input type="text" id="node-input-name" style="width:70%" data-i18n="[placeholder]common.label.name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="pegjs">
+    <p>Parse and transform message payload using <a href="https://pegjs.org" >PEG.js</a></p>
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">string</span></dt>
+        <dd>the string to parse.</dd>
+        <dt class="optional">grammar <span class="property-type">string</span></dt>
+        <dd>PEG.js grammar</dd>
+    </dl>
+    <h3>Output</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">string</span></dt>
+        <dd>Parser output</dd>
+    </dl>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('pegjs', {
+        category: 'function',
+        color: "#DEBD5C",
+        defaults: {
+            grammar: {value: ""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "parser-html.png",
+        label: function () {
+            return this.name || this.tag || "pegjs";
+        },
+        labelStyle: function () {
+            return this.name ? "node_label_italic" : "";
+        },
+    });
+</script>
