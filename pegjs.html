@@ -1,12 +1,12 @@
 <script type="text/x-red" data-template-name="pegjs">
     <div class="form-row">
-        <label for="node-input-grammar"><i class="fa fa-filter"></i> <span data-i18n="pegjs.label.grammar"></span></label>
-        <textarea id="node-input-grammar" placeholder="grammar">
+        <label for="node-input-grammar"><i class="fa fa-filter"></i> Grammar</label>
+        <textarea id="node-input-grammar" placeholder="grammar"></textarea>
     </div>
-    <br/>
+    <br>
     <div class="form-row">
-        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span></label>
-        <input type="text" id="node-input-name" style="width:70%" data-i18n="[placeholder]common.label.name">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" style="width:70%">
     </div>
 </script>
 
@@ -31,7 +31,8 @@
         category: 'function',
         color: "#DEBD5C",
         defaults: {
-            grammar: {value: ""}
+            grammar: {value: ""},
+            name: {value: ""}
         },
         inputs: 1,
         outputs: 1,
