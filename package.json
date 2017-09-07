@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-pegjs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "parsing",
     "node-red"
