@@ -2,12 +2,10 @@
   "name": "node-red-contrib-pegjs",
   "version": "1.0.0",
   "keywords": [
-    "util",
-    "functional",
-    "server",
-    "client",
-    "browser"
+    "parsing",
+    "node-red"
   ],
+  "homepage": "https://github.com/devnewton/node-red-contrib-pegjs",
   "author": "devnewton",
   "contributors": [],
   "dependencies": {
